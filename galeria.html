@@ -17,7 +17,7 @@
 <body>
   <!-- Navegação do Site -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand img-fluid" href="index.html"><img height="85px" width="120" src="images/nicebarber.jpg"
             alt="" width="100px"></a>
@@ -55,7 +55,7 @@
   </header>
 
   <!-- Galeria de Fotos -->
-  <main>
+  <main class="bg-black">
     <div class="row mx-3 mt-3">
       <div class="col-lg-4 col-md-12 mb-lg-0">
         <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte1.jpg">
@@ -69,16 +69,16 @@
     </div>
     <div class="row mx-3 justify-content-center">
       <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo1.mp4" class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted
-          loop></video>
+        <video src="video/corteVideo1.mp4" type="video/mp4"
+          class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
       </div>
       <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo2.mp4" class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted
-          loop></video>
+        <video src="video/corteVideo2.mp4" type="video/mp4"
+          class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
       </div>
       <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo3.mp4" class="img-fluid object-fit-contain  shadow-1-strong rounded mb-2" autoplay muted
-          loop></video>
+        <video src="video/corteVideo3.mp4" type="video/mp4"
+          class="img-fluid object-fit-contain  shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
       </div>
     </div>
     <div class="row mx-3">
@@ -92,7 +92,7 @@
         <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte4.jpg">
       </div>
     </div>
-    <div class="row mx-3 mb-3">
+    <div class="row mx-3">
       <div class="col-lg-4 col-md-12 mb-lg-0">
         <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Allan/corte1.jpg">
       </div>
@@ -105,36 +105,34 @@
     </div>
   </main>
 
-  <!-- Rodape -->
-
+  <!-- RODAPÉ -->
   <footer class="bg-dark text-center text-lg-start text-white">
     <div class="container pt-1">
       <div class="row my-3">
         <div class="col-lg-3 col-md-4 mb-md-0">
-
           <div
             class="rounded-circle bg-black shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
             style="width: 150px; height: 150px;">
             <img src="images/icon_nice.jpg" height="70" alt="" loading="lazy" />
           </div>
-
-          <p class="text-center">Barbearia que tem talento!
-          </p>
-
+          <h5 class="text-center text-uppercase">Nice Barber
+          </h5>
           <ul class="list-unstyled d-flex flex-row justify-content-center">
             <li>
               <a class="text-white px-2"
-                href="https://api.whatsapp.com/send/?phone=551934780964&text&type=phone_number&app_absent=0">
+                href="https://api.whatsapp.com/send/?phone=551934780964&text&type=phone_number&app_absent=0"
+                target="_blank">
                 <i class="fab fa-whatsapp"></i>
               </a>
             </li>
             <li>
-              <a class="text-white px-2" href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg==">
+              <a class="text-white px-2" href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg=="
+                target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a class="text-white ps-2"
+              <a class="text-white ps-2" target="_blank"
                 href="https://www.google.com/maps/place/Nice+Barber+-+R.+Abelardo+Fonseca,+40+-+Campo+Limpo,+Americana+-+SP,+13477-070/@-22.7325095,-47.3072005,15z/data=!4m6!3m5!1s0x94c89b52c124569d:0x983b683eb9379e02!8m2!3d-22.7325095!4d-47.3072005!16s%2Fg%2F11s1w8fnjl">
                 <i class="fa-solid fa-location-dot"></i>
               </a>
@@ -168,6 +166,9 @@
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2023 Copyright:
       <a class="text-white" href="index.html">NiceBarber.com</a>
+      <br>
+      Criador:
+      <a class="text-white" href="" style="text-decoration: none;" target="_blank">Victor Hugo Gutierrez</a>
     </div>
   </footer>
 </body>
