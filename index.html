@@ -27,14 +27,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" aria-current="page" href="index.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                <li><a class="dropdown-item text-white" href="#marca">Nossa Marca</a></li>
+                <li><a class="dropdown-item text-white" href="#equipe">Equipe</a></li>
+                <li><a class="dropdown-item text-white" href="#servicos">Serviços</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="equipe.html">Equipe</a>
             </li>
           </ul>
           <div class="d-flex">
@@ -54,20 +57,22 @@
     </nav>
   </header>
 
-  <main>
+  <main style="background-color: black;">
     <!-- IMAGEM DE FUNDO PRINCIPAL -->
     <div class="img-corte"></div>
 
     <!-- NOSSA MARCA SECTION -->
+    <div id="marca"></div>
     <section class="img-fundo">
       <div class="card bg-dark text-white">
         <div class="card-img-overlay m-3" style="width: 100%; max-width: 50vh;">
           <h1 class="card-title text-white text-uppercase">NOSSA MARCA</h1>
-          <p class="card-text" style="text-align: justify; font-size: 17px;">Nice Barber, fundada em 2022, é uma
+          <p class="card-text" style="text-align: justify; font-size: 18px; font-weight: 500;">Nice Barber, fundada em
+            2022, é uma
             barbearia que combina o
             charme das barbearias
             clássicas com um toque moderno e sofisticado. Oferecemos serviços de corte de cabelo e barba impecáveis,
-            enquanto você desfruta de um ambiente relaxante, e conversas envolventes. Venha fazer parte da nossa
+            enquanto você desfruta de um ambiente relaxante, e papo descontraído. Venha fazer parte da nossa
             comunidade de homens que valorizam a tradição e o estilo, e experimente uma barbearia como nenhuma outra.
           </p>
         </div>
@@ -75,7 +80,7 @@
     </section>
 
     <!-- SERVIÇOS -->
-    <div class="album py-3 bg-black">
+    <div class="album py-3 bg-black" id="servicos">
       <div class="container">
         <h1 class="text-uppercase text-white m-3">SERVIÇOS</h1>
         <div class="row">
