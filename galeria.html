@@ -1,174 +1,327 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="imagem/jpg" href="images/icon_nice.jpg" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f09c312315.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="imagem/jpg" href="images/icon_nice.jpg" />
-  <link rel="stylesheet" href="style/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-  </script>
-  <script src="https://kit.fontawesome.com/f09c312315.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-
-<body>
-  <!-- Navegação do Site -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand img-fluid" href="index.html"><img height="85px" width="120" src="images/nicebarber.jpg"
-            alt="" width="100px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="galeria.html">Galeria</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a class="btn mt-2" target="_blank"
-              href="https://api.whatsapp.com/send/?phone=551934780964&text&type=phone_number&app_absent=0"><i
-                class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i></a>
-            <a class="btn mt-2" target="_blank" href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg=="><i
-                class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-            <a class="btn mt-2" target="_blank"
-              href="https://www.google.com/maps/place/Nice+Barber+-+R.+Abelardo+Fonseca,+40+-+Campo+Limpo,+Americana+-+SP,+13477-070/@-22.7325095,-47.3072005,15z/data=!4m6!3m5!1s0x94c89b52c124569d:0x983b683eb9379e02!8m2!3d-22.7325095!4d-47.3072005!16s%2Fg%2F11s1w8fnjl"><i
-                class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i></a>
-            <a class="btn btn-outline-light m-2" target="_blank"
-              href="https://agendamento.avec.beauty/?slug=nicebarber#/app/widget/nicebarber">Agende Aqui!</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Galeria de Fotos -->
-  <main class="bg-black">
-    <div class="row mx-3 mt-3">
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte1.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte2.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte3.jpg">
-      </div>
-    </div>
-    <div class="row mx-3 justify-content-center">
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo1.mp4" type="video/mp4"
-          class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo2.mp4" type="video/mp4"
-          class="img-fluid object-fit-contain shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <video src="video/corteVideo3.mp4" type="video/mp4"
-          class="img-fluid object-fit-contain  shadow-1-strong rounded mb-2" autoplay muted loop controls></video>
-      </div>
-    </div>
-    <div class="row mx-3">
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Bruno/corte1.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Bruno/corte2.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Mateus/corte4.jpg">
-      </div>
-    </div>
-    <div class="row mx-3">
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Allan/corte1.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Allan/corte2.jpg">
-      </div>
-      <div class="col-lg-4 col-md-12 mb-lg-0">
-        <img class="img-fluid shadow-1-strong rounded mb-3" src="images/Allan/corte3.jpg">
-      </div>
-    </div>
-  </main>
-
-  <!-- RODAPÉ -->
-  <footer class="bg-dark text-center text-lg-start text-white">
-    <div class="container pt-1">
-      <div class="row my-3">
-        <div class="col-lg-3 col-md-4 mb-md-0">
-          <div
-            class="rounded-circle bg-black shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-            style="width: 150px; height: 150px;">
-            <img src="images/icon_nice.jpg" height="70" alt="" loading="lazy" />
-          </div>
-          <h5 class="text-center text-uppercase">Nice Barber
-          </h5>
-          <ul class="list-unstyled d-flex flex-row justify-content-center">
-            <li>
-              <a class="text-white px-2"
+  <body>
+    <!-- Navegação do Site -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand img-fluid" href="index.html"
+            ><img
+              height="60px"
+              width="80px"
+              src="images/icon_nice.jpg"
+              alt=""
+              width="100px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html"
+                  style="font-family: 'Quicksand', sans-serif"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="galeria.html"
+                  style="font-family: 'Quicksand', sans-serif"
+                  >Galeria</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a
+                class="btn mt-2"
+                target="_blank"
                 href="https://api.whatsapp.com/send/?phone=551934780964&text&type=phone_number&app_absent=0"
-                target="_blank">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white px-2" href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg=="
-                target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white ps-2" target="_blank"
-                href="https://www.google.com/maps/place/Nice+Barber+-+R.+Abelardo+Fonseca,+40+-+Campo+Limpo,+Americana+-+SP,+13477-070/@-22.7325095,-47.3072005,15z/data=!4m6!3m5!1s0x94c89b52c124569d:0x983b683eb9379e02!8m2!3d-22.7325095!4d-47.3072005!16s%2Fg%2F11s1w8fnjl">
-                <i class="fa-solid fa-location-dot"></i>
-              </a>
-            </li>
-          </ul>
+                ><i
+                  class="fa-brands fa-whatsapp fa-lg"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+              <a
+                class="btn mt-2"
+                target="_blank"
+                href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg=="
+                ><i
+                  class="fa-brands fa-instagram fa-lg"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+              <a
+                class="btn mt-2"
+                target="_blank"
+                href="https://www.google.com/maps/place/Nice+Barber+-+R.+Abelardo+Fonseca,+40+-+Campo+Limpo,+Americana+-+SP,+13477-070/@-22.7325095,-47.3072005,15z/data=!4m6!3m5!1s0x94c89b52c124569d:0x983b683eb9379e02!8m2!3d-22.7325095!4d-47.3072005!16s%2Fg%2F11s1w8fnjl"
+                ><i
+                  class="fa-solid fa-location-dot fa-lg"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+              <a
+                class="btn btn-outline-light m-2"
+                target="_blank"
+                href="https://agendamento.avec.beauty/?slug=nicebarber#/app/widget/nicebarber"
+                style="font-family: 'Quicksand', sans-serif"
+                >Agende Aqui!</a
+              >
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="col-lg-3 col-md-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Contato</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <p><i class="fas fa-map-marker-alt pe-2"></i>R. Abelardo Fonseca, 40 - Campo Limpo - Americana - SP</p>
-            </li>
-            <li>
-              <p><i class="fas fa-phone pe-2"></i>+55 19 3478 - 0964</p>
-            </li>
-          </ul>
+    <!-- Galeria de Fotos -->
+    <main class="bg-black">
+      <div class="row mx-3 mt-3">
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Mateus/corte1.jpg"
+          />
         </div>
-
-        <div class="col-lg-6 col-md-4 mb-md-0 d-flex">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.881078111073!2d-47.309857089252816!3d-22.73266113527367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89b52c124569d%3A0x983b683eb9379e02!2sNice%20Barber!5e0!3m2!1spt-BR!2sbr!4v1693362211749!5m2!1spt-BR!2sbr"
-            width="600" height="240" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Mateus/corte2.jpg"
+          />
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Mateus/corte3.jpg"
+          />
         </div>
       </div>
-    </div>
+      <div class="row mx-3 justify-content-center">
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <video
+            src="video/corteVideo1.mp4"
+            type="video/mp4"
+            class="img-fluid object-fit-contain shadow-1-strong rounded mb-2"
+            autoplay
+            muted
+            loop
+            controls
+          ></video>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <video
+            src="video/corteVideo2.mp4"
+            type="video/mp4"
+            class="img-fluid object-fit-contain shadow-1-strong rounded mb-2"
+            autoplay
+            muted
+            loop
+            controls
+          ></video>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <video
+            src="video/corteVideo3.mp4"
+            type="video/mp4"
+            class="img-fluid object-fit-contain shadow-1-strong rounded mb-2"
+            autoplay
+            muted
+            loop
+            controls
+          ></video>
+        </div>
+      </div>
+      <div class="row mx-3">
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Bruno/corte1.jpg"
+          />
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Bruno/corte2.jpg"
+          />
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Mateus/corte4.jpg"
+          />
+        </div>
+      </div>
+      <div class="row mx-3">
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Allan/corte1.jpg"
+          />
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Allan/corte2.jpg"
+          />
+        </div>
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img
+            class="img-fluid shadow-1-strong rounded mb-3"
+            src="images/Allan/corte3.jpg"
+          />
+        </div>
+      </div>
+    </main>
 
-    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-white" href="index.html">NiceBarber.com</a>
-      <br>
-      Criador:
-      <a class="text-white" href="" style="text-decoration: none;" target="_blank">Victor Hugo Gutierrez</a>
-    </div>
-  </footer>
-</body>
-</script>
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <div class="container pt-1">
+        <div class="row my-3">
+          <div class="col-lg-3 col-md-4 mb-md-0">
+            <div
+              class="rounded-circle bg-black shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="images/icon_nice.jpg"
+                height="70"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <h5
+              class="text-center text-uppercase"
+              style="font-family: 'EB Garamond', serif"
+            >
+              Nice Barber
+            </h5>
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a
+                  class="text-white px-2"
+                  href="https://api.whatsapp.com/send/?phone=551934780964&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-white px-2"
+                  href="https://instagram.com/nicebarber_nb?igshid=MWZjMTM2ODFkZg=="
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-white ps-2"
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Nice+Barber+-+R.+Abelardo+Fonseca,+40+-+Campo+Limpo,+Americana+-+SP,+13477-070/@-22.7325095,-47.3072005,15z/data=!4m6!3m5!1s0x94c89b52c124569d:0x983b683eb9379e02!8m2!3d-22.7325095!4d-47.3072005!16s%2Fg%2F11s1w8fnjl"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="col-lg-3 col-md-4 mb-md-0">
+            <h5
+              class="text-uppercase mb-4"
+              style="font-family: 'EB Garamond', serif"
+            >
+              Contato
+            </h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p style="font-family: 'Quicksand', sans-serif">
+                  <i class="fas fa-map-marker-alt pe-2"></i>R. Abelardo Fonseca,
+                  40 - Campo Limpo - Americana - SP
+                </p>
+              </li>
+              <li>
+                <p style="font-family: 'Quicksand', sans-serif">
+                  <i class="fas fa-phone pe-2"></i>+55 19 3478 - 0964
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-4 mb-md-0 d-flex">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.881078111073!2d-47.309857089252816!3d-22.73266113527367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89b52c124569d%3A0x983b683eb9379e02!2sNice%20Barber!5e0!3m2!1spt-BR!2sbr!4v1693362211749!5m2!1spt-BR!2sbr"
+              width="600"
+              height="240"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center p-2"
+        style="
+          background-color: rgba(0, 0, 0, 0.2);
+          font-family: 'Quicksand', sans-serif;
+        "
+      >
+        © 2023 Copyright:
+        <a class="text-white" href="index.html">NiceBarber.com</a>
+        <br />
+        Criador:
+        <a
+          class="text-white"
+          href=""
+          style="text-decoration: none"
+          target="_blank"
+          >Victor Hugo Gutierrez</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
