@@ -5,6 +5,7 @@
 main {
   width: auto;
   height: auto;
+  background: #000;
 }
 .img-corte {
   clear: both;
