@@ -10,12 +10,13 @@ main {
 .img-corte {
   height: 920px;
   width: 100%;
-  max-height: 80vh;
+  max-height: 85vh;
   background-image: url(../images/home/back-image.png);
   object-fit: cover;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .img-fundo {
   clear: both;
