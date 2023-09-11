@@ -29,10 +29,13 @@ main {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
+  #fixar-nav {
+    position: static;
+  }
   .img-corte {
     height: 920px;
     width: 100%;
-    max-height: 85vh;
+    max-height: 70vh;
     background-image: url(../images/home/back-image.png);
     object-fit: cover;
     background-position: center;
