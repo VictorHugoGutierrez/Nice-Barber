@@ -10,7 +10,7 @@ main {
 .img-corte {
   height: 920px;
   width: 100%;
-  max-height: 85vh;
+  max-height: 80vh;
   background-image: url(../images/home/back-image.png);
   object-fit: cover;
   background-position: center;
@@ -20,16 +20,6 @@ main {
 }
 #ajustar-fixed {
   margin-top: 80px;
-}
-.img-fundo {
-  clear: both;
-  height: 100%;
-  width: 100%;
-  max-height: 80vh;
-  background: url(../images/home/image-text.png) center center fixed;
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   #ajustar-fixed {
@@ -49,4 +39,11 @@ main {
     background-repeat: no-repeat;
     background-attachment: local;
   }
+  #ajust-size-slide {
+    max-width: 30vh;
+  }
+}
+
+#ajust-size-slide {
+  max-width: 55vh;
 }

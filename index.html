@@ -26,6 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -121,143 +128,105 @@
       <div class="img-corte"></div>
 
       <!-- NOSSA MARCA SECTION -->
-      <div class="container py-3">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="text-white">
-              <h1
-                class="text-uppercase"
-                style="font-family: 'EB Garamond', serif"
-              >
-                NOSSA MARCA
-              </h1>
-              <p
-                class=""
-                style="
-                  text-align: justify;
-                  font-size: 18px;
-                  font-family: 'Quicksand', sans-serif;
-                  max-width: 80vh;
-                "
-              >
-                Nice Barber, fundada em 2022, é uma barbearia que combina o
-                charme das barbearias clássicas com um toque moderno e
-                sofisticado. Oferecemos serviços de corte de cabelo e barba
-                impecáveis, enquanto você desfruta de um ambiente relaxante, e
-                papo descontraído. Venha fazer parte da nossa comunidade de
-                homens que valorizam a tradição e o estilo, e experimente uma
-                barbearia como nenhuma outra.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <img
-              class="img-fluid"
-              src="images/home/image-text.png"
-              alt=""
-              style="min-width: 40vh"
-            />
+      <section class="my-4">
+        <div class="container py-3 align-content-center">
+          <div class="text-white">
+            <h1
+              class="text-uppercase"
+              style="font-family: 'EB Garamond', serif"
+            >
+              NOSSA MARCA
+            </h1>
+            <p
+              class=""
+              style="
+                text-align: justify;
+                font-size: 18px;
+                font-family: 'Quicksand', sans-serif;
+              "
+            >
+              Nice Barber, fundada em 2022, é uma barbearia que combina o charme
+              das barbearias clássicas com um toque moderno e sofisticado.
+              Oferecemos serviços de corte de cabelo e barba impecáveis,
+              enquanto você desfruta de um ambiente relaxante, e papo
+              descontraído. Venha fazer parte da nossa comunidade de homens que
+              valorizam a tradição e o estilo, e experimente uma barbearia como
+              nenhuma outra.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Equipe -->
-      <div class="album py-3 bg-black">
+      <!-- Galeria -->
+      <section class="mb-4" style="width: 100%">
         <div class="container">
           <h1
-            class="text-uppercase text-white m-3"
+            class="text-uppercase text-white"
             style="font-family: 'EB Garamond', serif"
           >
-            Equipe
+            Galeria
           </h1>
-          <div class="row">
-            <div class="col-md-4">
-              <div
-                class="card mb-4 shadow-sm text-center"
-                style="background-color: black"
-              >
+        </div>
+        <div class="container" id="ajust-size-slide">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img
-                  class="card-img-top"
-                  alt=""
-                  src="images/home/allan-img.jpeg"
-                  style="height: 100%; width: 100%; display: block"
+                  src="images/Allan/corte3.jpg"
+                  alt="Imagem 1"
+                  style="width: 100%"
                 />
-                <div class="card-body">
-                  <h5 class="card-text text-uppercase">
-                    <a
-                      class="text-white"
-                      style="
-                        text-decoration: none;
-                        font-family: 'Quicksand', sans-serif;
-                      "
-                      href="https://instagram.com/allanalves_nb?igshid=NGVhN2U2NjQ0Yg=="
-                      >Allan Alves</a
-                    >
-                  </h5>
-                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/Mateus/corte2.jpg"
+                  alt="Imagem 2"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/Mateus/corte3.jpg"
+                  alt="Imagem 3"
+                  style="width: 100%"
+                />
               </div>
             </div>
-            <div class="col-md-4">
-              <div
-                class="card mb-4 shadow-sm text-center"
-                style="background-color: black"
-              >
-                <img
-                  class="card-img-top"
-                  alt=""
-                  src="images/home/mateus-img.jpeg"
-                  style="height: 100%; width: 100%; display: block"
-                />
-                <div class="card-body">
-                  <h5 class="card-text text-uppercase">
-                    <a
-                      class="text-white"
-                      style="
-                        text-decoration: none;
-                        font-family: 'Quicksand', sans-serif;
-                      "
-                      href="https://instagram.com/barbeiromateusdias?igshid=NGVhN2U2NjQ0Yg=="
-                      >Mateus Dias</a
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card mb-4 shadow-sm text-center"
-                style="background-color: black"
-              >
-                <img
-                  class="card-img-top"
-                  alt=""
-                  src="images/home/bruno-img.jpeg"
-                  style="height: 100%; width: 100%; display: block"
-                />
-                <div class="card-body">
-                  <h5 class="card-text text-uppercase">
-                    <a
-                      class="text-white"
-                      style="
-                        text-decoration: none;
-                        font-family: 'Quicksand', sans-serif;
-                      "
-                      href="https://instagram.com/barbeirobrunoleite?igshid=NGVhN2U2NjQ0Yg=="
-                      >Bruno Leite</a
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
+
+            <!-- Controles do Slide -->
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- SERVIÇOS -->
       <div class="album py-3 bg-black">
         <div class="container">
           <h1
-            class="text-uppercase text-white m-3"
+            class="text-uppercase text-white mt-2"
             style="font-family: 'EB Garamond', serif"
           >
             SERVIÇOS
